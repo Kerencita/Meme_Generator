@@ -1,0 +1,41 @@
+.container{
+    font-family: Impact, fantasy;
+    position: relative;
+    text-align: center;
+    color: white;
+    -webkit-text-stroke: 2px black;
+}
+
+.top-text{
+    font-size: 2em;
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.bottom-text{
+    font-size: 2em;
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.hover-in{
+    opacity: 0.2;
+}
+
+
+h1{
+    text-align: center;
+}
+
+h2{
+    text-align: center;
+}
+
+form{
+    display: block;
+    text-align: center;
+}
