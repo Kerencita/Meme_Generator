@@ -18,24 +18,20 @@ function makeMeme (a,b,c){
     newMeme.classList.add("container")
     newMeme.id = "picture"
     newMeme.innerHTML = 
-    `<img src="${a}" alt="" width = "300" height = "300">
+    `<img onmouseenter="hoverIn(this)" onmouseout="hoverOut(this)" src="${a}" alt="" width = "300" height = "300">
     <div class="top-text">${b}</div>
     <div class="bottom-text">${c}</div>`
     parent.appendChild(newMeme)
 }
 
-// parent.addEventListener('mouseenter', function(e){
-//     if (e.target.parentElement.id === "picture"){
-//         console.log(e.target)
-//         e.target.parentElement.classList.add("hover-in")
-//     }
-// })
+function hoverIn(x){
+    x.parentElement.style.opacity = 0.5;
+}
 
-// parent.addEventListener('mouseout', function(e){
-//     if(e.target.parentElement.id === "picture"){
-//         e.target.parentElement.classList.remove("hover-in")
-//     }
-// })
+function hoverOut(x){
+    x.parentElement.style.opacity = 1;
+
+}
 
 parent.addEventListener("click", function (e){
     if(e.target.parentElement.id == "picture"){
