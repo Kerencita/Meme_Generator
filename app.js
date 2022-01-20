@@ -18,7 +18,7 @@ function makeMeme (a,b,c){
     newMeme.classList.add("container")
     newMeme.id = "picture"
     newMeme.innerHTML = 
-    `<img src="${a}" alt="">
+    `<img src="${a}" alt="" width = "300" height = "300">
     <div class="top-text">${b}</div>
     <div class="bottom-text">${c}</div>`
     parent.appendChild(newMeme)

@@ -1,23 +1,26 @@
 .container{
     font-family: Impact, fantasy;
     position: relative;
+    display: table;
+    float: left;
+    padding: 5px;
     text-align: center;
     color: white;
     -webkit-text-stroke: 2px black;
 }
 
 .top-text{
-    font-size: 2em;
+    font-size: 1.5em;
     position: absolute;
-    top: 10%;
+    top: 13%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
 
 .bottom-text{
-    font-size: 2em;
+    font-size: 1.5em;
     position: absolute;
-    top: 90%;
+    top: 87%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
@@ -26,9 +29,14 @@
     opacity: 0.2;
 }
 
+#parent{
+    margin-left: 5%;
+    margin-right: 5%;
+}
 
 h1{
     text-align: center;
+    font-size: 3em;
 }
 
 h2{
@@ -38,4 +46,16 @@ h2{
 form{
     display: block;
     text-align: center;
+}
+
+label{
+    font-size: 1.25em;
+    display: inline-block;
+    width: 150px;
+    text-align: left;
+}
+
+body{
+    background-color: rgb(219, 239, 250);
+    font-family: 'Concert One', cursive;
 }
